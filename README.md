@@ -1,82 +1,62 @@
-# TwitterClone
+# Twitter Clone
+A modern Twitter clone built with cutting-edge web technologies, providing a seamless and responsive user experience for real-time thought sharing.
 
-Un clone moderne de Twitter développé avec des technologies web modernes, offrant une expérience utilisateur fluide et réactive pour le partage de pensées en temps réel.
-## Fonctionnalités
-### Authentification
+## Features
+### Authentication
+- Secure user registration and login
+- Session management
+- Password reset functionality
 
-Inscription et connexion sécurisées
-Gestion des sessions utilisateurs
-Réinitialisation de mot de passe
+## Posts & Content
+- Create tweets (280 character limit)
+- Image and media support
+- Tweet threads and replies
+- Retweets and quote tweets
+- Like and bookmark system
 
-### Publications
+## Social Interactions
+- Follow/unfollow system
+- Customizable user profiles
+- Real-time notifications
+- Direct messaging
+- User and content search
 
-- Création de tweets (280 caractères max)
-- Support des images et médias
-- Threads et réponses
-- Retweets et citations
-- Système de likes et bookmarks
+## User Interface
+- Responsive design (mobile-first)
+- Dark/light mode toggle
+- Modern and intuitive interface
+- Infinite scroll for tweets
+- Smooth animations and transitions
 
-### Interactions Sociales
-
-- Système de follow/unfollow
-- Profils utilisateurs personnalisables
-- Notifications en temps réel
-- Messages privés
-- Recherche d'utilisateurs et de contenu
-
-### Interface Utilisateur
-
-- Design responsive (mobile-first)
-- Mode sombre/clair
-- Interface intuitive et moderne
-- Chargement infini des tweets
-- Animations fluides
-
-### Technologies Utilisées
+## Tech Stack
 Frontend
-
-- React - Bibliothèque UI
-- TypeScript - Typage statique
-- Boostrap
-- React Query - Gestion des états serveur
-- React Router - Navigation côté client
-- Socket.io Client - Communication temps réel
+- React - UI Library
+- TypeScript - Static typing
+- Tailwind CSS - Utility-first CSS framework
+- React Query - Server state management
+- React Router - Client-side routing
+- Socket.io Client - Real-time communication
 
 Backend
+ - Node.js - JavaScript runtime
+ - Express.js - Web framework
+ - TypeScript - Static typing
+ - MongoDB - NoSQL database
+ - Mongoose - MongoDB ODM
+ - Socket.io - Real-time WebSockets
+ - JWT - Token-based authentication
+ - Multer - File upload handling
+ - Cloudinary - Image storage and optimization
 
-- Node.js - Runtime JavaScript
-- Express.js - Framework web
-- MongoDB - Base de données NoSQL
-- Mongoose - ODM pour MongoDB
-- Socket.io - WebSockets temps réel
-- JWT - Authentification par tokens
-- Multer - Upload de fichiers
-- Cloudinary - Stockage d'images
+DevOps & Tools
+- Docker - Containerization
+- GitHub Actions - CI/CD pipeline
+- ESLint - Code linting
+- Prettier - Code formatting
+- Jest - Unit testing
 
-DevOps & Outils
-
-- Docker - Conteneurisation
-- GitHub Actions - CI/CD
-- ESLint - Linting du code
-- Prettier - Formatage du code
-- Jest - Tests unitaires
-
-### Installation
-Prérequis
-
-- Node.js (v18 ou supérieur)
-- MongoDB (v5.0 ou supérieur)
-- npm ou yarn
-
-# Configuration Locale
-
-## Cloner le repository
-
-- bashgit clone https://github.com/votre-username/twitter-clone.git
-- cd twitter-clone
-
-Installer les dépendances
-
-- bash# Backend
-- cd backend
-- npm install
+# Getting Started
+## Prerequisites
+- Node.js (v18 or higher)
+- MongoDB (v5.0 or higher)
+- npm
