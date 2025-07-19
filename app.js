@@ -7,7 +7,7 @@ const api = require("./routes/api");
 const index = require("./routes");
 
 app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "pug");
+app.set("view engine", "pug ");
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
