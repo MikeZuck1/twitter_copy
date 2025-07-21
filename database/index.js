@@ -1,7 +1,12 @@
 const mongoose = require("mongoose");
+const dotenv = require("dotenv"); 
+
+dotenv.config(); // load variables
+
+const MONGODB_URI = process.env.MONGODB_URI;
 
 mongoose
-  .connect("mongodb://localhost:27017/chapters", {
+  .connect(MONGODB_URI, {
     useNewUrlParser: true,
   })
   .then(() => {

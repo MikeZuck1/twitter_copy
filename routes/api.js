@@ -1,13 +1,7 @@
 const express = require("express");
+const chapters = require("./chapters");
 const router = express.Router();
-const Chapter = require("../database/models/chapters.model");
 
-router.get("/", (req, res) => {
-  Chapter.find({})
-    .exc()
-    .then((doc) => {
-      res.json(doc);
-    });
-});
+router.use('/chapters', chapters);
 
 module.exports = router;
