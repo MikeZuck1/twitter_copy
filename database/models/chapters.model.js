@@ -13,6 +13,12 @@ const chapterSchema = new schema(
   }
 );
 
+chapterSchema.pre("save", function () {
+  return Chapters.countDocuments()
+    .exec()
+    .then((nbr) => (this.index = nbr + 1));
+});
+
 const Chapter = mongoose.model("chapters", chapterSchema);
 
 module.exports = Chapter;
