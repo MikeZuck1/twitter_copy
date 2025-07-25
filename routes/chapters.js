@@ -20,7 +20,15 @@ router.post("/", (req, res) => {
       res.redirect("/");
     })
     .catch((err) => {
-      console.error(err);
+      const errors = err.errors;
+      console.log(
+        util.inspet(errors, {
+          compact: true,
+          depth: 5,
+          breakLength: 80,
+          colors: true,
+        })
+      );
       res.status(404).render("index");
     });
 });
