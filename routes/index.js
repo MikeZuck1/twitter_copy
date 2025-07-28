@@ -1,12 +1,7 @@
-const express = require("express");
-const api = require("./api");
-
-const router = express.Router();
-
-router.use("/api", api);
+const router = require("express").Router();
 
 router.get("/", (req, res) => {
-  res.status(200).render("index");
+  res.status(200).render("tweets/tweet-list.pug");
 });
 
 module.exports = router;
