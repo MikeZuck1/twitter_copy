@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("combined"));
 
 // define our routes.
-app.use(index); // put index instead of routing -- remove routing
+app.use(index);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
